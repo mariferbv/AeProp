@@ -416,3 +416,12 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# --- Angular Specific ---
+.angular/
+dist/
+/frontend/ae-prop-web/dist/
+/frontend/ae-prop-web/.angular/
+/frontend/ae-prop-web/node_modules/
+.vscode/
+*.log

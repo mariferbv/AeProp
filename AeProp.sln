@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{902935DE-CFE2-460B-835D-A03DC7132DC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{2E05CA64-F5CA-48B1-A6D8-B0C8DEAC9BE6}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\ae-prop-web\package.json = frontend\ae-prop-web\package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{2ABC40AE-A422-4EC0-A769-924CFE1A31E9}"
+	ProjectSection(SolutionItems) = preProject
+		architecture.md = architecture.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeProp.Api", "backend\AeProp.Api\AeProp.Api.csproj", "{A423E1F5-D293-4871-8009-BBBC34CD692E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A423E1F5-D293-4871-8009-BBBC34CD692E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A423E1F5-D293-4871-8009-BBBC34CD692E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A423E1F5-D293-4871-8009-BBBC34CD692E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A423E1F5-D293-4871-8009-BBBC34CD692E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A423E1F5-D293-4871-8009-BBBC34CD692E} = {902935DE-CFE2-460B-835D-A03DC7132DC9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F703BD2-00AA-4602-BEB2-3747E4258E50}
+	EndGlobalSection
+EndGlobal
