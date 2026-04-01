@@ -13,7 +13,19 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AePropDbContext>(options =>
     options.UseNpgsql(connectionString));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FreePolicy", policy =>
+    {
+        policy.WithOrigins("http:localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("FreePolicy");
 
 if (app.Environment.IsDevelopment())
 {
