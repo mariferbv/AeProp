@@ -1,4 +1,5 @@
 ﻿using AeProp.Api.Domain.Entities;
+using AeProp.Api.Dtos;
 using AeProp.Api.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -24,8 +25,20 @@ namespace AeProp.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Property>> CreateProperty(Property property)
+        public async Task<ActionResult<Property>> CreateProperty(PropertyCreateDto propertyDto)
         {
+            // TODO: use AutoMapper
+            Property property = new Property
+            {
+                Name = propertyDto.Name,
+                Address = propertyDto.Address,
+                Bedrooms = propertyDto.Bedrooms,
+                Bathrooms = propertyDto.Bathrooms,
+                Category = propertyDto.Category,
+                CreatedAt = DateTime.UtcNow
+
+            };
+
             _context.Properties.Add(property);
             await _context.SaveChangesAsync();
 
