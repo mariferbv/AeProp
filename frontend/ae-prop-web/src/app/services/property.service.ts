@@ -10,7 +10,7 @@ export class PropertyService {
   private http = inject(HttpClient);
 
   //swagger
-  private apiUrl = 'http://localhost:7094/properties';
+  private apiUrl = 'https://localhost:7094/api/Properties';
 
   getProperties(): Observable<Property[]> {
     return this.http.get<Property[]>(this.apiUrl);

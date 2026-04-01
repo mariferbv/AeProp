@@ -31,6 +31,7 @@ namespace AeProp.Api.Controllers
             Property property = new Property
             {
                 Name = propertyDto.Name,
+                Price = propertyDto.Price,
                 Address = propertyDto.Address,
                 Bedrooms = propertyDto.Bedrooms,
                 Bathrooms = propertyDto.Bathrooms,

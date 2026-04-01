@@ -24,7 +24,7 @@ namespace AeProp.Api.Domain.Entities
         public int Bathrooms { get; set; }
 
         [MaxLength(500)]
-        public string ImageUrl { get; set; } = "https://via.placeholder.com/300";
+        public string ImageUrl { get; set; } = "https://picsum.photos/id/164/1200/800";
 
         public DateTime CreatedAt { get; set; }
 
